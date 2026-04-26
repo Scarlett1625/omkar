@@ -3,64 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development & Engineering Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <title>My Web Development & Code Notes</title>
     <style>
-        body { background-color: #f4f6f9; color: #333; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .header { background: #2c3e50; color: white; padding: 40px 0; text-align: center; margin-bottom: 30px; }
-        .category-title { border-bottom: 2px solid #3498db; padding-bottom: 10px; margin-top: 40px; margin-bottom: 20px; color: #2c3e50; }
-        details { background: white; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 10px 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        summary { font-size: 1.1rem; font-weight: bold; cursor: pointer; outline: none; color: #34495e; list-style-type: '💻 '; }
-        summary:hover { color: #3498db; }
-        .code-container { margin-top: 15px; }
-        pre { border-radius: 8px; }
-        h5 { margin-top: 20px; font-size: 1rem; color: #e74c3c; font-weight: bold; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            background-color: #222;
+            color: #fff;
+            padding: 30px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0 0 10px 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+        .file-block {
+            background: #fff;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+            padding: 20px;
+        }
+        .file-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap; /* Keeps your formatting but wraps long lines */
+            font-size: 14px;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>Code Repository & Portfolio</h1>
-    <p>A systematic compilation of Web Development, JavaScript, React, and Backend Database projects.</p>
-</div>
-
 <div class="container">
+    <div class="header">
+        <h1>My Web Development & Code Notes</h1>
+        <p>A complete collection of my project files, step-by-step instructions, and code snippets.</p>
+    </div>
 
-    <h2 class="category-title">1. UI/UX & Version Control</h2>
+    <div class="file-block">
+        <div class="file-title">1. Personal Web Page (Resume)</div>
+<pre>save file name as resume.html
 
-    <details>
-        <summary>1. Personal Web Page (Resume)</summary>
-        <div class="code-container">
-            <h5>resume.html</h5>
-            <pre><code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;title&gt;My Resume&lt;/title&gt;
+
     &lt;style&gt;
-        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; }
-        .container { width: 80%; margin: auto; background: white; padding: 20px; }
-        header { text-align: center; background: #333; color: white; padding: 20px; }
-        h2 { border-bottom: 2px solid #333; padding-bottom: 5px; }
-        .section { margin: 20px 0; }
-        ul { list-style-type: square; }
-        .contact { background: #eee; padding: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        .contact {
+            background: #eee;
+            padding: 10px;
+        }
     &lt;/style&gt;
 &lt;/head&gt;
+
 &lt;body&gt;
+
 &lt;div class="container"&gt;
+
     &lt;header&gt;
         &lt;h1&gt;Omkar Pawar&lt;/h1&gt;
         &lt;p&gt;Web Developer | Student&lt;/p&gt;
     &lt;/header&gt;
+
     &lt;div class="section"&gt;
         &lt;h2&gt;Personal Details&lt;/h2&gt;
         &lt;p&gt;&lt;b&gt;Name:&lt;/b&gt; Omkar Pawar&lt;/p&gt;
         &lt;p&gt;&lt;b&gt;Date of Birth:&lt;/b&gt; 23/06/2006&lt;/p&gt;
         &lt;p&gt;&lt;b&gt;Address:&lt;/b&gt; Mumbai, India&lt;/p&gt;
     &lt;/div&gt;
+
     &lt;div class="section"&gt;
         &lt;h2&gt;Education&lt;/h2&gt;
         &lt;ul&gt;
@@ -69,6 +138,7 @@
             &lt;li&gt;SSC - Holy Mary Convent Hight School&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
+
     &lt;div class="section"&gt;
         &lt;h2&gt;Skills&lt;/h2&gt;
         &lt;ul&gt;
@@ -77,6 +147,7 @@
             &lt;li&gt;Basic Programming&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
+
     &lt;div class="section"&gt;
         &lt;h2&gt;Experience&lt;/h2&gt;
         &lt;ul&gt;
@@ -84,47 +155,114 @@
             &lt;li&gt;Mini Project: Resume Website&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
+
     &lt;div class="section contact"&gt;
         &lt;h2&gt;Contact Information&lt;/h2&gt;
         &lt;p&gt;Email: omkar@email.com&lt;/p&gt;
         &lt;p&gt;Phone: 1234567890&lt;/p&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
 
-    <details>
-        <summary>2. Responsive Bootstrap Page</summary>
-        <div class="code-container">
-            <h5>bootstrap.html</h5>
-            <pre><code class="language-html">
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">2. JavaScript: Even or Odd</div>
+<pre>1. Write a JavaScript code to find whether the entered number is even or odd.
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;Program for if statement&lt;/title&gt; 
+&lt;script type="text/javascript"&gt; 
+function display(no) 
+{ 
+if(no%2==0) 
+document.write("Number is Even") 
+else 
+document.write("Number is Odd") 
+} 
+&lt;/script&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;script type="text/javascript"&gt; 
+var no=prompt("Enter number",1) 
+display(no) 
+&lt;/script&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">3. Bootstrap Layout</div>
+<pre>save file name as bootstrap.html
+
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;title&gt;Responsive Bootstrap Page&lt;/title&gt;
+
+    &lt;!-- Bootstrap CDN --&gt;
     &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+
     &lt;style&gt;
-        body { background-color: #f8f9fa; }
-        .navbar { border-radius: 50px; margin: 20px; padding: 10px 20px; }
-        .navbar-brand { font-weight: bold; }
-        .nav-link.active { border-bottom: 2px solid black; }
-        .hero { background: #5c6f6f; color: white; padding: 100px 0; text-align: center; border-radius: 10px; margin: 20px; }
-        .hero h1 { font-size: 40px; font-weight: bold; }
-        .btn-custom { background-color: #00c4b4; color: white; border-radius: 20px; padding: 8px 20px; }
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* Navbar style */
+        .navbar {
+            border-radius: 50px;
+            margin: 20px;
+            padding: 10px 20px;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .nav-link.active {
+            border-bottom: 2px solid black;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #5c6f6f;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            background-color: #00c4b4;
+            color: white;
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
     &lt;/style&gt;
 &lt;/head&gt;
+
 &lt;body&gt;
+
+&lt;!-- 🔷 Navbar --&gt;
 &lt;nav class="navbar navbar-expand-lg navbar-light bg-white shadow"&gt;
     &lt;div class="container-fluid"&gt;
+
         &lt;a class="navbar-brand" href="#"&gt;MySite&lt;/a&gt;
+
         &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"&gt;
             &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
         &lt;/button&gt;
+
         &lt;div class="collapse navbar-collapse justify-content-center" id="menu"&gt;
             &lt;ul class="navbar-nav"&gt;
                 &lt;li class="nav-item"&gt;&lt;a class="nav-link active" href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
@@ -134,32 +272,64 @@
                 &lt;li class="nav-item"&gt;&lt;a class="nav-link" href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/div&gt;
+
         &lt;button class="btn btn-custom"&gt;Login&lt;/button&gt;
+
     &lt;/div&gt;
 &lt;/nav&gt;
+
+&lt;!-- 🔷 Hero Section --&gt;
 &lt;div class="container-fluid"&gt;
     &lt;div class="hero"&gt;
         &lt;h1&gt;Responsive Navigation&lt;br&gt;Bootstrap Layout&lt;/h1&gt;
         &lt;p class="mt-3"&gt;Resize window to see responsive effect&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
 
-    <details>
-        <summary>3. GitHub Basics & Git Repo Initialization</summary>
-        <div class="code-container">
-            <h5>Terminal Commands & Setup files</h5>
-            <pre><code class="language-bash">
-# index.html
+&lt;!-- Bootstrap JS --&gt;
+&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">4. JavaScript: Sum 1 to 10</div>
+<pre>Write a JavaScript code to display the sum of 1 to 10 numbers using a for loop.
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;Program for if statement&lt;/title&gt; 
+&lt;script type="text/javascript"&gt; 
+function sum() 
+{ 
+var i,sum=0 
+for(i=1;i&lt;=10;i++) 
+{ 
+sum=sum+i 
+} 
+document.write("Sum of 1 to 10 numbers=" + sum) 
+} 
+&lt;/script&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;script type="text/javascript"&gt; 
+sum() 
+&lt;/script&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">5. GitHub Instructions</div>
+<pre>Git Hub
+
+create a new file index.html
+
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;title&gt;My First Git Repo&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -168,180 +338,174 @@
 &lt;/body&gt;
 &lt;/html&gt;
 
-# omkar.txt
+
+create a new file omkar.txt
 Hello, my name is Omkar.
 This text file is part of my first Git repository!
 
-# Git Commands (Terminal)
+Go to Terminal
+
 git init
 git add .
 git commit -m "Initial commit: Added index.html and omkar.txt"
-git remote add origin [Your GitHub Repo Link]
+git remote add origin  (we have to place our GitHub Repo link))
 git branch -M main
 git push -u origin main
-            </code></pre>
-        </div>
-    </details>
 
-    <h2 class="category-title">2. JavaScript Fundamentals</h2>
 
-    <details>
-        <summary>4. Find Even or Odd Number</summary>
-        <div class="code-container">
-            <pre><code class="language-html">
+
+Login to GitHub website in which you have placed your Repo link and you will get your output!!!!!</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">6. JavaScript: Even 11 to 30</div>
+<pre>Write a JavaScript code to display even numbers from 11 to 30 using a while loop.
 &lt;html&gt; 
 &lt;head&gt; 
 &lt;title&gt;Program for if statement&lt;/title&gt; 
 &lt;script type="text/javascript"&gt; 
-function display(no) { 
-    if(no%2==0) 
-        document.write("Number is Even") 
-    else 
-        document.write("Number is Odd") 
+function display() 
+{ 
+var i=11 
+while(i&lt;=30) 
+{ 
+if(i%2==0) 
+document.writeln(i + "&lt;br&gt;") 
+i++ 
+} 
 } 
 &lt;/script&gt; 
 &lt;/head&gt; 
 &lt;body&gt; 
 &lt;script type="text/javascript"&gt; 
-    var no=prompt("Enter number",1) 
-    display(no) 
+display() 
 &lt;/script&gt; 
 &lt;/body&gt; 
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
+&lt;/html&gt;</pre>
+    </div>
 
-    <details>
-        <summary>5. Sum of 1 to 10 Numbers (For Loop)</summary>
-        <div class="code-container">
-            <pre><code class="language-html">
+    <div class="file-block">
+        <div class="file-title">7. JavaScript: Arithmetic Operations</div>
+<pre>4. Write a JavaScript code to perform arithmetic operations on two numbers using a switch case 
+statement.
 &lt;html&gt; 
 &lt;head&gt; 
 &lt;title&gt;Program for if statement&lt;/title&gt; 
 &lt;script type="text/javascript"&gt; 
-function sum() { 
-    var i,sum=0 
-    for(i=1;i&lt;=10;i++) { 
-        sum=sum+i 
-    } 
-    document.write("Sum of 1 to 10 numbers=" + sum) 
+function addition(a,b) 
+{ 
+var c 
+c=parseInt(a)+parseInt(b) 
+document.write("&lt;br&gt; Addition= " + c) 
 } 
-&lt;/script&gt; 
-&lt;/head&gt; 
-&lt;body&gt; 
-&lt;script type="text/javascript"&gt; 
-    sum() 
-&lt;/script&gt; 
-&lt;/body&gt; 
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
+ 
+            function subtraction(a,b) 
+            { 
+               var c 
+               c=parseInt(a)-parseInt(b) 
+               document.write("&lt;br&gt; Addition= " + c) 
+            } 
+ 
+            function multiplication(a,b) 
+            { 
+               var c 
+               c=parseInt(a)*parseInt(b) 
+               document.write("&lt;br&gt; Addition= " + c) 
+            } 
+ 
+            function division(a,b) 
+            { 
+               var c 
+               c=parseInt(a)/parseInt(b) 
+               document.write("&lt;br&gt; Addition= " + c) 
+            } 
+ 
+            function modulus(a,b) 
+            { 
+               var c 
+               c=parseInt(a)%parseInt(b) 
+               document.write("&lt;br&gt; Addition= " + c) 
+            } 
+ 
+      &lt;/script&gt; 
+    &lt;/head&gt; 
+    &lt;body&gt; 
+        &lt;script type="text/javascript"&gt; 
+          a=prompt("Enter first number") 
+          document.write("First Number: " + a) 
+          b=prompt("Enter second number") 
+          document.write("&lt;br&gt;Second Number: " + b) 
+          document.write("&lt;br&gt;Menu 1.Addition 2.Subtraction 3.Multiplication 4.Division 5.Modulus") 
+          document.write("&lt;br&gt;Enter choice: ") 
+          choice=prompt("Enter choice:",1) 
+          document.write(choice) 
+          switch(choice) 
+          { 
+            case '1': 
+                addition(a,b) 
+                break 
+            case '2': 
+                subtraction(a,b) 
+                break 
+            case '3': 
+                multiplication(a,b) 
+                break;
+            case '4': 
+                division(a,b) 
+                break 
+            case '5': 
+                modulus(a,b) 
+                break 
+            default: 
+                document.write("&lt;br&gt;Invalid Choice") 
+          } 
+        &lt;/script&gt; 
+    &lt;/body&gt; 
+&lt;/html&gt;</pre>
+    </div>
 
-    <details>
-        <summary>6. Display Even Numbers from 11 to 30 (While Loop)</summary>
-        <div class="code-container">
-            <pre><code class="language-html">
-&lt;html&gt; 
-&lt;head&gt; 
-&lt;title&gt;Program for if statement&lt;/title&gt; 
-&lt;script type="text/javascript"&gt; 
-function display() { 
-    var i=11 
-    while(i&lt;=30) { 
-        if(i%2==0) 
-            document.writeln(i + "&lt;br&gt;") 
-        i++ 
-    } 
-} 
-&lt;/script&gt; 
-&lt;/head&gt; 
-&lt;body&gt; 
-&lt;script type="text/javascript"&gt; 
-    display() 
-&lt;/script&gt; 
-&lt;/body&gt; 
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
+    <div class="file-block">
+        <div class="file-title">8. Interactive Form Validation</div>
+<pre>save file name as form.html
 
-    <details>
-        <summary>7. Arithmetic Operations Calculator (Switch Case)</summary>
-        <div class="code-container">
-            <pre><code class="language-html">
-&lt;html&gt; 
-&lt;head&gt; 
-&lt;title&gt;Program for if statement&lt;/title&gt; 
-&lt;script type="text/javascript"&gt; 
-function addition(a,b) { 
-    var c = parseInt(a)+parseInt(b);
-    document.write("&lt;br&gt; Addition= " + c);
-} 
-function subtraction(a,b) { 
-    var c = parseInt(a)-parseInt(b);
-    document.write("&lt;br&gt; Subtraction= " + c);
-} 
-function multiplication(a,b) { 
-    var c = parseInt(a)*parseInt(b);
-    document.write("&lt;br&gt; Multiplication= " + c);
-} 
-function division(a,b) { 
-    var c = parseInt(a)/parseInt(b);
-    document.write("&lt;br&gt; Division= " + c);
-} 
-function modulus(a,b) { 
-    var c = parseInt(a)%parseInt(b);
-    document.write("&lt;br&gt; Modulus= " + c);
-} 
-&lt;/script&gt; 
-&lt;/head&gt; 
-&lt;body&gt; 
-&lt;script type="text/javascript"&gt; 
-    a=prompt("Enter first number") 
-    document.write("First Number: " + a) 
-    b=prompt("Enter second number") 
-    document.write("&lt;br&gt;Second Number: " + b) 
-    document.write("&lt;br&gt;Menu 1.Addition 2.Subtraction 3.Multiplication 4.Division 5.Modulus") 
-    document.write("&lt;br&gt;Enter choice: ") 
-    choice=prompt("Enter choice:",1) 
-    document.write(choice) 
-    
-    switch(choice) { 
-        case '1': addition(a,b); break;
-        case '2': subtraction(a,b); break;
-        case '3': multiplication(a,b); break;
-        case '4': division(a,b); break;
-        case '5': modulus(a,b); break;
-        default: document.write("&lt;br&gt;Invalid Choice"); 
-    } 
-&lt;/script&gt; 
-&lt;/body&gt; 
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
-
-    <h2 class="category-title">3. HTML Forms & JavaScript Validation</h2>
-
-    <details>
-        <summary>8. Interactive Form Validation (Regex)</summary>
-        <div class="code-container">
-            <h5>form.html</h5>
-            <pre><code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Form Validation&lt;/title&gt;
+
     &lt;style&gt;
-        body { font-family: Arial; background: #f2f2f2; }
-        .container { width: 350px; margin: auto; background: white; padding: 20px; margin-top: 50px; border-radius: 10px; }
-        input { width: 100%; padding: 8px; margin: 8px 0; }
-        button { width: 100%; padding: 10px; background: green; color: white; border: none; }
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+            border: none;
+        }
     &lt;/style&gt;
+
     &lt;script&gt;
         function validateForm() {
+
             let name = document.getElementById("name").value;
             let roll = document.getElementById("roll").value;
             let mobile = document.getElementById("mobile").value;
@@ -351,238 +515,237 @@ function modulus(a,b) {
             let rollPattern = /^[0-9]+$/;
             let mobilePattern = /^[0-9]{10}$/;
 
-            if (name == "" || !namePattern.test(name)) { alert("Enter valid name (only characters)"); return false; }
-            if (roll == "" || !rollPattern.test(roll)) { alert("Roll number must contain only digits"); return false; }
-            if (!mobilePattern.test(mobile)) { alert("Mobile number must be 10 digits"); return false; }
-            if (!(email.includes("@") && email.includes("."))) { alert("Enter valid email"); return false; }
+            // Name validation
+            if (name == "" || !namePattern.test(name)) {
+                alert("Enter valid name (only characters)");
+                return false;
+            }
+
+            // Roll number validation
+            if (roll == "" || !rollPattern.test(roll)) {
+                alert("Roll number must contain only digits");
+                return false;
+            }
+
+            // Mobile validation
+            if (!mobilePattern.test(mobile)) {
+                alert("Mobile number must be 10 digits");
+                return false;
+            }
+
+            // Email validation
+            if (!(email.includes("@") && email.includes("."))) {
+                alert("Enter valid email");
+                return false;
+            }
 
             alert("Form submitted successfully!");
             return true;
         }
     &lt;/script&gt;
+
 &lt;/head&gt;
+
 &lt;body&gt;
+
 &lt;div class="container"&gt;
     &lt;h2&gt;Student Form&lt;/h2&gt;
+
     &lt;form onsubmit="return validateForm()"&gt;
-        &lt;label&gt;Name:&lt;/label&gt; &lt;input type="text" id="name"&gt;
-        &lt;label&gt;Roll No:&lt;/label&gt; &lt;input type="text" id="roll"&gt;
-        &lt;label&gt;Mobile No:&lt;/label&gt; &lt;input type="text" id="mobile"&gt;
-        &lt;label&gt;Email:&lt;/label&gt; &lt;input type="text" id="email"&gt;
+
+        &lt;label&gt;Name:&lt;/label&gt;
+        &lt;input type="text" id="name"&gt;
+
+        &lt;label&gt;Roll No:&lt;/label&gt;
+        &lt;input type="text" id="roll"&gt;
+
+        &lt;label&gt;Mobile No:&lt;/label&gt;
+        &lt;input type="text" id="mobile"&gt;
+
+        &lt;label&gt;Email:&lt;/label&gt;
+        &lt;input type="text" id="email"&gt;
+
         &lt;button type="submit"&gt;Submit&lt;/button&gt;
+
     &lt;/form&gt;
 &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
 
-    <details>
-        <summary>9. Basic HTML Form Design (Required attribute)</summary>
-        <div class="code-container">
-            <h5>form.html & success.html</h5>
-            <pre><code class="language-html">
-&lt;!-- form.html --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">9. HTML Code to Design a Form</div>
+<pre>HTML Code to design a Form
+
+
+Save first file name as form.html
+
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;&lt;title&gt;Student Form&lt;/title&gt;&lt;/head&gt;
+&lt;head&gt;
+    &lt;title&gt;Student Form&lt;/title&gt;
+&lt;/head&gt;
 &lt;body&gt;
+
 &lt;h2&gt;Student Form&lt;/h2&gt;
+
 &lt;form action="success.html"&gt;
-    &lt;label&gt;Name:&lt;/label&gt;&lt;br&gt; &lt;input type="text" name="name" required&gt;&lt;br&gt;&lt;br&gt;
-    &lt;label&gt;Roll No:&lt;/label&gt;&lt;br&gt; &lt;input type="text" name="rollno" required&gt;&lt;br&gt;&lt;br&gt;
-    &lt;label&gt;Mobile No:&lt;/label&gt;&lt;br&gt; &lt;input type="text" name="mobile" required&gt;&lt;br&gt;&lt;br&gt;
-    &lt;label&gt;Email:&lt;/label&gt;&lt;br&gt; &lt;input type="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Name:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" name="name" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Roll No:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" name="rollno" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Mobile No:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="text" name="mobile" required&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label&gt;Email:&lt;/label&gt;&lt;br&gt;
+    &lt;input type="email" name="email" required&gt;&lt;br&gt;&lt;br&gt;
+
     &lt;input type="submit" value="Submit"&gt;
+
 &lt;/form&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
 
-&lt;!-- success.html --&gt;
+Save another new file as success.html
+
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;&lt;title&gt;Success Page&lt;/title&gt;&lt;/head&gt;
+&lt;head&gt;
+    &lt;title&gt;Success Page&lt;/title&gt;
+&lt;/head&gt;
 &lt;body&gt;
+
 &lt;h2&gt;Form Submitted Successfully!&lt;/h2&gt;
 &lt;p&gt;Thank you for filling the form.&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
 
-    <details>
-        <summary>10. Form with Two Textboxes (Trim Validation)</summary>
-        <div class="code-container">
-            <h5>index.html & next.html</h5>
-            <pre><code class="language-html">
-&lt;!-- index.html --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">10. Form with Two Textboxes</div>
+<pre>7. Form with Two Textboxes
+
+save a new file as index.html
+
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Form Validation&lt;/title&gt;
+
     &lt;script&gt;
         function validateForm() {
             let username = document.getElementById("username").value;
+            // Check if username is empty
             if (username.trim() === "") {
                 alert("Username is required!");
-                return false; 
+                return false; // stop submission
             }
+
+            // If valid
             alert("Thank you");
-            return true; 
+            return true; // allow submission (redirect happens)
         }
     &lt;/script&gt;
+
 &lt;/head&gt;
+
 &lt;body&gt;
+
 &lt;h2&gt;Login Form&lt;/h2&gt;
+
 &lt;form action="next.html" onsubmit="return validateForm()"&gt;
-    Username:&lt;br&gt; &lt;input type="text" id="username"&gt;&lt;br&gt;&lt;br&gt;
-    Roll No:&lt;br&gt; &lt;input type="text" id="rollno"&gt;&lt;br&gt;&lt;br&gt;
+
+    Username:&lt;br&gt;
+    &lt;input type="text" id="username"&gt;&lt;br&gt;&lt;br&gt;
+
+    Roll No:&lt;br&gt;
+    &lt;input type="text" id="rollno"&gt;&lt;br&gt;&lt;br&gt;
+
     &lt;button type="submit"&gt;Submit&lt;/button&gt;
+
 &lt;/form&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
 
-&lt;!-- next.html --&gt;
+Save a new file as next.html
+
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;&lt;title&gt;Next Page&lt;/title&gt;&lt;/head&gt;
+&lt;head&gt;
+    &lt;title&gt;Next Page&lt;/title&gt;
+&lt;/head&gt;
 &lt;body&gt;
-&lt;h2&gt;Welcome! Form Submitted Successfully&lt;/h2&gt;
+
+&lt;h2&gt;Welcome!
+Form Submitted Successfully&lt;/h2&gt;
+
 &lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
+&lt;/html&gt;</pre>
+    </div>
 
-    <h2 class="category-title">4. ReactJS Projects</h2>
+    <div class="file-block">
+        <div class="file-title">11. jQuery Hide Element</div>
+<pre>8. jQuery
 
-    <details>
-        <summary>11. ReactJS API Fetch using AXIOS</summary>
-        <div class="code-container">
-            <h5>App.jsx</h5>
-            <pre><code class="language-jsx">
-import { useState, useEffect } from 'react';
-import axios from 'axios';
+save file name as index.html
 
-function App() {
-  const [userData, setUserData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;jQuery Hide Example&lt;/title&gt;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-        setUserData(response.data);
-        setLoading(false);
-      } catch (err) {
-        setError(err.message);
-        setLoading(false);
-      }
-    };
-    fetchData(); 
-  }, []);
+    &lt;!-- jQuery CDN --&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
 
-  if (loading) return &lt;h2 style={{ textAlign: 'center', marginTop: '50px' }}&gt;Loading API Data...&lt;/h2&gt;;
-  if (error) return &lt;h2 style={{ color: 'red', textAlign: 'center' }}&gt;Error: {error}&lt;/h2&gt;;
+    &lt;script&gt;
+        $(document).ready(function() {
+            $("#hideBtn").click(function() {
+                $("#para").hide();
+            });
+        });
+    &lt;/script&gt;
 
-  return (
-    &lt;div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto' }}&gt;
-      &lt;h1 style={{ textAlign: 'center', borderBottom: '2px solid #333', paddingBottom: '10px' }}&gt;
-        Public Directory
-      &lt;/h1&gt;
-      &lt;div style={{ marginTop: '20px' }}&gt;
-        {userData.map((user) =&gt; (
-          &lt;div key={user.id} style={{ border: '1px solid #ccc', borderRadius: '8px', padding: '15px', marginBottom: '15px', backgroundColor: '#f9f9f9' }}&gt;
-            &lt;h3 style={{ margin: '0 0 10px 0', color: '#0056b3' }}&gt;{user.name}&lt;/h3&gt;
-            &lt;p style={{ margin: '5px 0' }}&gt;&lt;strong&gt;Email:&lt;/strong&gt; {user.email}&lt;/p&gt;
-            &lt;p style={{ margin: '5px 0' }}&gt;&lt;strong&gt;City:&lt;/strong&gt; {user.address.city}&lt;/p&gt;
-          &lt;/div&gt;
-        ))}
-      &lt;/div&gt;
-    &lt;/div&gt;
-  );
-}
-export default App;
-            </code></pre>
-        </div>
-    </details>
+&lt;/head&gt;
 
-    <details>
-        <summary>12. ReactJS Interactive Counter</summary>
-        <div class="code-container">
-            <h5>App.jsx</h5>
-            <pre><code class="language-jsx">
-import { useState } from 'react';
+&lt;body&gt;
 
-function App() {
-  const [count, setCount] = useState(0);
+&lt;h2&gt;jQuery Example&lt;/h2&gt;
 
-  const increment = () =&gt; { setCount(count + 1); };
-  const decrement = () =&gt; { setCount(count - 1); };
+&lt;p id="para"&gt;Hello I am Omkar Pawar from 2nd Year 4th sem and my college name is Vidya Prasark Mandal College of Enginnering&lt;/p&gt;
 
-  return (
-    &lt;div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'system-ui' }}&gt;
-      &lt;h1&gt;Interactive Counter&lt;/h1&gt;
-      
-      &lt;h2 style={{ fontSize: '64px', margin: '20px 0', color: '#333' }}&gt;{count}&lt;/h2&gt;
+&lt;button id="hideBtn"&gt;Hide Paragraph&lt;/button&gt;
 
-      &lt;div style={{ display: 'flex', justifyContent: 'center', gap: '15px' }}&gt;
-        &lt;button onClick={decrement} style={{ padding: '10px 25px', fontSize: '18px', cursor: 'pointer', backgroundColor: '#dc3545', color: 'white', border: 'none', borderRadius: '5px' }}&gt;
-          Decrease (-)
-        &lt;/button&gt;
-        &lt;button onClick={increment} style={{ padding: '10px 25px', fontSize: '18px', cursor: 'pointer', backgroundColor: '#28a745', color: 'white', border: 'none', borderRadius: '5px' }}&gt;
-          Increase (+)
-        &lt;/button&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  );
-}
-export default App;
-            </code></pre>
-        </div>
-    </details>
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+    </div>
 
-    <details>
-        <summary>13. ReactJS Welcome Toggle</summary>
-        <div class="code-container">
-            <h5>App.jsx</h5>
-            <pre><code class="language-jsx">
-import { useState } from 'react';
+    <div class="file-block">
+        <div class="file-title">12. PHP Cookies & Sessions</div>
+<pre>GO to your Xampp app and turn on the Apache server and then go to your desktop
 
-function App() {
-  const [isWelcome, setIsWelcome] = useState(true);
+when you create a new folder in desktop save the file name as "php_cookies_sessions" when you create this folder copy this folder and paste it into the Xampp folder
 
-  const handleToggle = () =&gt; {
-    setIsWelcome(!isWelcome);
-  };
+after making a folder go to your vs code and open the file "php_cookies_sessions"
 
-  return (
-    &lt;div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'system-ui' }}&gt;
-      &lt;h1&gt;
-        {isWelcome ? "Welcome Student" : "Thank You"}
-      &lt;/h1&gt;
-      &lt;button onClick={handleToggle} style={{ padding: '10px 20px', fontSize: '16px', cursor: 'pointer', marginTop: '20px', backgroundColor: '#007BFF', color: 'white', border: 'none', borderRadius: '5px' }}&gt;
-        Toggle Message
-      &lt;/button&gt;
-    &lt;/div&gt;
-  );
-}
-export default App;
-            </code></pre>
-        </div>
-    </details>
+Now here create 4 new files:-
+file name are as follows
 
-    <h2 class="category-title">5. PHP & MySQL Operations</h2>
+1) give the file name as 1_cookies.php
+2) give the 2nd file name as 2_session_create.php
+3) give the 3rd file name as 3_session_retrieve.php
+4) give the 4th file name as 4_session_destroy.php
 
-    <details>
-        <summary>14. PHP Cookies & Sessions Handling</summary>
-        <div class="code-container">
-            <h5>1_cookies.php</h5>
-            <pre><code class="language-php">
+!!!!!!Now open the first file "1_cookies.php" and paste the following code in that
+
 &lt;?php
+// Configure error reporting (optional, for debugging)
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ?&gt;
@@ -590,15 +753,18 @@ ini_set('display_errors', 1);
 &lt;html&gt;
 &lt;body&gt;
 &lt;h1&gt;PHP Cookie Operations&lt;/h1&gt;
+
 &lt;?php
 $cookie_name = "username";
 
+// Create Cookie
 if (isset($_POST['create'])) {
     $cookie_value = $_POST['uname'];
-    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); 
+    setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 1-day expiry
     echo "&lt;p&gt;Cookie created successfully!&lt;/p&gt;";
 }
 
+// Retrieve Cookie
 if (isset($_POST['retrieve'])) {
     if (isset($_COOKIE[$cookie_name])) {
         echo "&lt;p&gt;Cookie '{$cookie_name}' is set!&lt;br&gt;Value: {$_COOKIE[$cookie_name]}&lt;/p&gt;";
@@ -607,17 +773,21 @@ if (isset($_POST['retrieve'])) {
     }
 }
 
+// Update Cookie (same as create)
 if (isset($_POST['update'])) {
     $cookie_value = $_POST['uname'];
     setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
     echo "&lt;p&gt;Cookie updated successfully!&lt;/p&gt;";
 }
 
+// Delete Cookie
 if (isset($_POST['delete'])) {
     setcookie($cookie_name, "", time() - 3600, "/");
+    // Expire in the past
     echo "&lt;p&gt;Cookie deleted successfully!&lt;/p&gt;";
 }
 ?&gt;
+
 &lt;form method="POST"&gt;
   &lt;label&gt;Username: &lt;input type="text" name="uname"&gt;&lt;/label&gt;&lt;br&gt;&lt;br&gt;
   &lt;input type="submit" name="create" value="Create Cookie"&gt;
@@ -627,10 +797,13 @@ if (isset($_POST['delete'])) {
 &lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-            </code></pre>
-            <h5>2_session_create.php</h5>
-            <pre><code class="language-php">
-&lt;?php session_start(); ?&gt;
+
+!!!!!!Now open the second file "2_session_create.php" and paste the following code
+
+&lt;?php
+session_start();
+// Must be the first line
+?&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -643,10 +816,12 @@ echo "&lt;a href='3_session_retrieve.php'&gt;Go to Retrieve Page&lt;/a&gt;";
 ?&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-            </code></pre>
-            <h5>3_session_retrieve.php</h5>
-            <pre><code class="language-php">
-&lt;?php session_start(); ?&gt;
+
+!!!!!!!!Now open the third file "3_session_retrieve.php" and paste the following code
+
+&lt;?php
+session_start();
+?&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
@@ -658,135 +833,501 @@ echo "&lt;a href='4_session_destroy.php'&gt;Destroy Session&lt;/a&gt;";
 ?&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-            </code></pre>
-            <h5>4_session_destroy.php</h5>
-            <pre><code class="language-php">
-&lt;?php session_start(); ?&gt;
+
+!!!!!!!!!!Now open the fourth file "4_session_destroy.php" and paste the following code
+
+&lt;?php
+session_start();
+?&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;body&gt;
 &lt;h1&gt;Session: Destroying&lt;/h1&gt;
 &lt;?php
 session_unset();
-session_destroy();  
+// Clear all session variables
+session_destroy();  // Destroy session data
 echo "&lt;p&gt;Session destroyed!&lt;/p&gt;";
 echo "&lt;a href='2_session_create.php'&gt;Start New Session&lt;/a&gt;";
 ?&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
 
-    <details>
-        <summary>15. Database CRUD Operations with PHP & MySQL</summary>
-        <div class="code-container">
-            <h5>index.php</h5>
-            <pre><code class="language-php">
+
+Now click on View option and then click on Chat button
+
+
+after this just ask them to give you the local link for run the website
+
+and click on the 1. link to get the output
+
+
+thank youuuu!!!!</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">13. PHP & MySQL Database Operations</div>
+<pre>1) Step 1:-  Open the Xampp appp
+
+in that turn on the Apache server
+             and the MySQL server
+
+
+when the following process is done come to your desktop and create a file name as "student_project"
+ when you create this folder copy this folder and paste it into the Xampp folder
+
+
+and open this file in VS code
+now create a new file name as "index.php" and paste the following code in it
+
 &lt;?php
 $conn = new mysqli("localhost", "root", "", "rutuja");
-if ($conn-&gt;connect_error) { die("Connection Failed: " . $conn-&gt;connect_error); }
+if ($conn-&gt;connect_error) {
+    die("Connection Failed: " . $conn-&gt;connect_error);
+}
 
 $message = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $rollno = isset($_POST['rollno']) ? $_POST['rollno'] : '';
-    $name = isset($_POST['name']) ? $_POST['name'] : '';
+    $name = isset($_POST['name']) ?
+$_POST['name'] : '';
 
+    // Insert operation
     if (isset($_POST['insert'])) {
         $sql = "INSERT INTO student (rollno, name) VALUES ('$rollno', '$name')";
-        if ($conn-&gt;query($sql) === TRUE) { $message = "Record Inserted Successfully"; } 
-        else { $message = "Error: " . $conn-&gt;error; }
+        if ($conn-&gt;query($sql) === TRUE) {
+            $message = "Record Inserted Successfully";
+        } else {
+            $message = "Error: " . $conn-&gt;error;
+        }
     }
 
+    // Update operation
     if (isset($_POST['update'])) {
         $sql = "UPDATE student SET name='$name' WHERE rollno='$rollno'";
-        if ($conn-&gt;query($sql) === TRUE) { $message = "Record Updated Successfully"; } 
-        else { $message = "Error: " . $conn-&gt;error; }
+        if ($conn-&gt;query($sql) === TRUE) {
+            $message = "Record Updated Successfully";
+        } else {
+            $message = "Error: " . $conn-&gt;error;
+        }
     }
 
+    // Delete operation
     if (isset($_POST['delete'])) {
         $sql = "DELETE FROM student WHERE rollno='$rollno'";
-        if ($conn-&gt;query($sql) === TRUE) { $message = "Record Deleted Successfully"; } 
-        else { $message = "Error: " . $conn-&gt;error; }
+        if ($conn-&gt;query($sql) === TRUE) {
+            $message = "Record Deleted Successfully";
+        } else {
+            $message = "Error: " . $conn-&gt;error;
+        }
     }
 }
 ?&gt;
+
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-&lt;head&gt;&lt;title&gt;Database Operations&lt;/title&gt;&lt;/head&gt;
+&lt;head&gt;
+    &lt;title&gt;Database Operations&lt;/title&gt;
+&lt;/head&gt;
 &lt;body&gt;
+
 &lt;h2&gt;Student Form&lt;/h2&gt;
-&lt;?php if (!empty($message)) { echo "&lt;b&gt;$message&lt;/b&gt;&lt;br&gt;&lt;br&gt;"; } ?&gt;
+
+&lt;?php
+if (!empty($message)) {
+    echo "&lt;b&gt;$message&lt;/b&gt;&lt;br&gt;&lt;br&gt;";
+}
+?&gt;
 
 &lt;form method="post"&gt;
     Roll No: &lt;input type="number" name="rollno"&gt;&lt;br&gt;&lt;br&gt;
     Name: &lt;input type="text" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
     &lt;input type="submit" name="insert" value="Insert"&gt;
     &lt;input type="submit" name="update" value="Update"&gt;
     &lt;input type="submit" name="delete" value="Delete"&gt;
     &lt;input type="submit" name="view" value="View"&gt;
-&lt;/form&gt;&lt;br&gt;
+&lt;/form&gt;
+
+&lt;br&gt;
 
 &lt;?php
 if (isset($_POST['view'])) {
     $sql = "SELECT * FROM student";
     $result = $conn-&gt;query($sql);
+
     echo "&lt;h3&gt;Student Records&lt;/h3&gt;";
+
     if ($result-&gt;num_rows &gt; 0) {
-        echo "&lt;table border='1' cellpadding='5'&gt;&lt;tr&gt;&lt;th&gt;Roll No&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;";
+        echo "&lt;table border='1' cellpadding='5'&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Roll No&lt;/th&gt;
+                    &lt;th&gt;Name&lt;/th&gt;
+                &lt;/tr&gt;";
         while ($row = $result-&gt;fetch_assoc()) {
-            echo "&lt;tr&gt;&lt;td&gt;".$row["rollno"]."&lt;/td&gt;&lt;td&gt;".$row["name"]."&lt;/td&gt;&lt;/tr&gt;";
+            echo "&lt;tr&gt;
+                    &lt;td&gt;".$row["rollno"]."&lt;/td&gt;
+                    &lt;td&gt;".$row["name"]."&lt;/td&gt;
+                  &lt;/tr&gt;";
         }
+
         echo "&lt;/table&gt;";
-    } else { echo "No Records Found"; }
+    } else {
+        echo "No Records Found";
+    }
 }
+
 $conn-&gt;close();
 ?&gt;
+
 &lt;/body&gt;
 &lt;/html&gt;
-            </code></pre>
-            <h5>SQL Query to Create Database</h5>
-            <pre><code class="language-sql">
+
+!!!!
+NOW go to google and paste the following link
+
+http://localhost/phpmyadmin
+
+Create a new database
+Click New on the left side
+In the database name box, type:  "put your name"
+
+after creating it click on "SQL" and paste the following code
+
 CREATE TABLE student (
     rollno INT PRIMARY KEY,
     name VARCHAR(100) NOT NULL
 );
-            </code></pre>
-        </div>
-    </details>
+after inserting this code click on the "GO" Button 
 
-    <h2 class="category-title">6. Parsing & DOM Manipulation</h2>
+after this go on your VS code and click on View Button and ask him to give you the local link and here is your Output
 
-    <details>
-        <summary>16. XML Parsing using DOMParser (Hospital Records)</summary>
-        <div class="code-container">
-            <h5>index.html</h5>
-            <pre><code class="language-html">
+thank you!!!!!!</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">14. ReactJS using AXIOS</div>
+<pre>Download Node.js from chrome
+and now create a new folder on desktop name as ReactJS using AXIOS and open this folder in VS code now click on Terminal Button
+
+paste this terminal  
+ npm create vite@latest api-demo -- --template react
+
+now click on ENTER and again Click on ENTER if they ask you Question
+
+and create a new terminal and paste this code one by one
+cd api-demo
+npm install
+npm install axios
+
+(now its a main step)
+
+click on api-demo
+in that click on src
+in that click on App.jsx
+
+and delete the entire code and paste this following code in it
+
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+
+function App() {
+  const [userData, setUserData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() =&gt; {
+    const fetchData = async () =&gt; {
+      try {
+        const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+        setUserData(response.data);
+        setLoading(false);
+      } catch (err) {
+        setError(err.message);
+        setLoading(false);
+      }
+    };
+
+    fetchData(); 
+  }, []);
+  if (loading) return &lt;h2 style={{ textAlign: 'center', marginTop: '50px' }}&gt;Loading API Data...&lt;/h2&gt;;
+  if (error) return &lt;h2 style={{ color: 'red', textAlign: 'center' }}&gt;Error: {error}&lt;/h2&gt;;
+  return (
+    &lt;div style={{ padding: '20px', fontFamily: 'sans-serif', maxWidth: '600px', margin: '0 auto' }}&gt;
+      &lt;h1 style={{ textAlign: 'center', borderBottom: '2px solid #333', paddingBottom: '10px' }}&gt;
+        Public Directory
+      &lt;/h1&gt;
+      
+      &lt;div style={{ marginTop: '20px' }}&gt;
+        {userData.map((user) =&gt; (
+          &lt;div key={user.id} style={{ 
+            border: '1px solid #ccc', 
+            borderRadius: '8px', 
+            padding: '15px', 
+            marginBottom: '15px',
+            backgroundColor: '#f9f9f9'
+          }}&gt;
+            &lt;h3 style={{ margin: '0 0 10px 0', color: '#0056b3' }}&gt;{user.name}&lt;/h3&gt;
+            &lt;p style={{ margin: '5px 0' }}&gt;&lt;strong&gt;Email:&lt;/strong&gt; {user.email}&lt;/p&gt;
+            &lt;p style={{ margin: '5px 0' }}&gt;&lt;strong&gt;City:&lt;/strong&gt; {user.address.city}&lt;/p&gt;
+          &lt;/div&gt;
+        ))}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+
+
+and again click on the 2nd terminal which you have created named as powershell and type this final code in it
+npm run dev
+
+you will receive a local link click on the link and you will get your output
+
+!!!!!thank you</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">15. ReactJS Counter</div>
+<pre>Download Node.js from chrome
+and now create a new folder on desktop name as ReactJS using AXIOS and open this folder in VS code now click on Terminal Button
+
+paste this terminal  
+ npm create vite@latest api-demo -- --template react
+
+now click on ENTER and again Click on ENTER if they ask you Question
+
+and create a new terminal and paste this code one by one
+cd api-demo
+npm install
+npm install axios
+
+(now its a main step)
+
+click on api-demo
+in that click on src
+in that click on App.jsx
+
+and delete the entire code and paste this following code in it
+
+
+import { useState } from 'react';
+function App() {
+  // 1. Set up a state variable to hold the current number.
+  // We initialize it with a value of 0.
+  const [count, setCount] = useState(0);
+  // 2. Create a function to increase the count
+  const increment = () =&gt; {
+    setCount(count + 1);
+  };
+
+  // 3. Create a function to decrease the count
+  const decrement = () =&gt; {
+    setCount(count - 1);
+  };
+
+  return (
+    &lt;div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'system-ui' }}&gt;
+      &lt;h1&gt;Interactive Counter&lt;/h1&gt;
+      
+      {/* 4. Display the current state value on the screen */}
+      &lt;h2 style={{ fontSize: '64px', margin: '20px 0', color: '#333' }}&gt;
+        {count}
+      &lt;/h2&gt;
+
+      {/* 5. The Buttons that trigger our functions */}
+      &lt;div style={{ display: 'flex', justifyContent: 'center', gap: '15px' }}&gt;
+        
+        &lt;button 
+          onClick={decrement}
+          style={{
+            padding: '10px 25px',
+            fontSize: '18px',
+            cursor: 'pointer',
+            backgroundColor: '#dc3545', /* Red */
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px'
+          }}
+        &gt;
+          Decrease (-)
+        &lt;/button&gt;
+
+        &lt;button 
+          onClick={increment}
+          style={{
+            padding: '10px 25px',
+            fontSize: '18px',
+            cursor: 'pointer',
+            backgroundColor: '#28a745', /* Green */
+            color: 'white',
+            border: 'none',
+            borderRadius: '5px'
+          }}
+        &gt;
+          Increase (+)
+        &lt;/button&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+
+and again click on the 2nd terminal which you have created named as powershell and type this final code in it
+npm run dev
+
+you will receive a local link click on the link and you will get your output
+
+!!!!!thank you</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">16. ReactJS Welcome</div>
+<pre>Download Node.js from chrome
+and now create a new folder on desktop name as ReactJS using AXIOS and open this folder in VS code now click on Terminal Button
+
+paste this terminal  
+ npm create vite@latest api-demo -- --template react
+
+now click on ENTER and again Click on ENTER if they ask you Question
+
+and create a new terminal and paste this code one by one
+cd api-demo
+npm install
+npm install axios
+
+(now its a main step)
+
+click on api-demo
+in that click on src
+in that click on App.jsx
+
+and delete the entire code and paste this following code in it
+
+
+import { useState } from 'react';
+function App() {
+  // 1. Set up a state variable to track which message to show.
+  // We initialize it to 'true' so the default is the Welcome message.
+  const [isWelcome, setIsWelcome] = useState(true);
+  // 2. Create a function to handle the button click.
+  // This flips the state: if true it becomes false, if false it becomes true.
+  const handleToggle = () =&gt; {
+    setIsWelcome(!isWelcome);
+  };
+  return (
+    &lt;div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'system-ui' }}&gt;
+      
+      {/* 3. Conditional Rendering:
+          We use a ternary operator (condition ? true_result : false_result) 
+          to decide which text to display on the screen. */}
+      &lt;h1&gt;
+        {isWelcome ? "Welcome Student" : "Thank You"}
+      &lt;/h1&gt;
+
+      {/* 4. The Button: triggers the handleToggle function when clicked */}
+      &lt;button 
+        onClick={handleToggle}
+        style={{
+          padding: '10px 20px',
+          fontSize: '16px',
+          cursor: 'pointer',
+          marginTop: '20px',
+          backgroundColor: '#007BFF',
+          color: 'white',
+          border: 'none',
+          borderRadius: '5px'
+        }}
+      &gt;
+        Toggle Message
+      &lt;/button&gt;
+
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+
+and again click on the 2nd terminal which you have created named as powershell and type this final code in it
+npm run dev
+
+you will receive a local link click on the link and you will get your output
+
+!!!!!thank you</pre>
+    </div>
+
+    <div class="file-block">
+        <div class="file-title">17. XML Hospital Parsing</div>
+<pre>GO to your Xamppp APP and turn on the Apache server
+
+and create a folder name as hospital and when you create this folder copy this folder and paste it into the Xampp folder
+
+now open your VS code and open hospital and create a new file as index.html
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
     &lt;title&gt;Hospital Management System&lt;/title&gt;
     &lt;style&gt;
-        body { font-family: Arial, sans-serif; margin: 30px; background-color: #f9f9f9; }
-        h2 { color: #333; border-bottom: 2px solid #007BFF; padding-bottom: 5px; display: inline-block; }
-        table { border-collapse: collapse; width: 100%; max-width: 800px; margin-bottom: 40px; background-color: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #007BFF; color: white; }
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 30px; 
+            background-color: #f9f9f9;
+        }
+        h2 { 
+            color: #333;
+            border-bottom: 2px solid #007BFF; 
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        table { 
+            border-collapse: collapse;
+            width: 100%; 
+            max-width: 800px;
+            margin-bottom: 40px; 
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td { 
+            border: 1px solid #ddd;
+            padding: 12px; 
+            text-align: left; 
+        }
+        th { 
+            background-color: #007BFF;
+            color: white; 
+        }
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
+
     &lt;h1&gt;Hospital Management Dashboard&lt;/h1&gt;
+
     &lt;h2&gt;Doctors Directory&lt;/h2&gt;
     &lt;table id="doctorsTable"&gt;
-        &lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Specialty&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ID&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Specialty&lt;/th&gt;
+        &lt;/tr&gt;
     &lt;/table&gt;
+
     &lt;h2&gt;Patient Records&lt;/h2&gt;
     &lt;table id="patientsTable"&gt;
-        &lt;tr&gt;&lt;th&gt;ID&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Ailment&lt;/th&gt;&lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ID&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Ailment&lt;/th&gt;
+        &lt;/tr&gt;
     &lt;/table&gt;
 
     &lt;script&gt;
+        // 1. The XML Data (embedded as a string)
         const xmlString = `&lt;?xml version="1.0" encoding="UTF-8"?&gt;
         &lt;Hospital&gt;
             &lt;Doctors&gt;
@@ -813,82 +1354,61 @@ CREATE TABLE student (
             &lt;/Patients&gt;
         &lt;/Hospital&gt;`;
 
+        // 2. Parse the XML string into an XML Document Object
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(xmlString, "text/xml");
 
+        // 3. Function to extract Doctor data and build the table
         function loadDoctors() {
             const doctors = xmlDoc.getElementsByTagName("Doctor");
             const table = document.getElementById("doctorsTable");
+
             for (let i = 0; i &lt; doctors.length; i++) {
-                let row = table.insertRow(-1);
+                let row = table.insertRow(-1); // Append at the end
+                
                 let id = doctors[i].getAttribute("id");
                 let name = doctors[i].getElementsByTagName("Name")[0].textContent;
                 let specialty = doctors[i].getElementsByTagName("Specialty")[0].textContent;
+
                 row.insertCell(0).innerHTML = id;
                 row.insertCell(1).innerHTML = name;
                 row.insertCell(2).innerHTML = specialty;
             }
         }
 
+        // 4. Function to extract Patient data and build the table
         function loadPatients() {
             const patients = xmlDoc.getElementsByTagName("Patient");
             const table = document.getElementById("patientsTable");
+
             for (let i = 0; i &lt; patients.length; i++) {
                 let row = table.insertRow(-1);
                 let id = patients[i].getAttribute("id");
                 let name = patients[i].getElementsByTagName("Name")[0].textContent;
                 let age = patients[i].getElementsByTagName("Age")[0].textContent;
                 let ailment = patients[i].getElementsByTagName("Ailment")[0].textContent;
+
                 row.insertCell(0).innerHTML = id;
                 row.insertCell(1).innerHTML = name;
                 row.insertCell(2).innerHTML = age;
                 row.insertCell(3).innerHTML = ailment;
             }
         }
+
+        // 5. Execute the functions to populate the page
         loadDoctors();
         loadPatients();
     &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
 
-    <details>
-        <summary>17. jQuery UI Hide Element</summary>
-        <div class="code-container">
-            <h5>index.html</h5>
-            <pre><code class="language-html">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-    &lt;title&gt;jQuery Hide Example&lt;/title&gt;
-    &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
-    &lt;script&gt;
-        $(document).ready(function() {
-            $("#hideBtn").click(function() {
-                $("#para").hide();
-            });
-        });
-    &lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-&lt;h2&gt;jQuery Example&lt;/h2&gt;
-&lt;p id="para"&gt;Hello I am Omkar Pawar from 2nd Year 4th sem and my college name is Vidya Prasark Mandal College of Enginnering&lt;/p&gt;
-&lt;button id="hideBtn"&gt;Hide Paragraph&lt;/button&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-            </code></pre>
-        </div>
-    </details>
+
+and now click on view button and click on chat and type give me the local link click on the link and you will get the following output
+
+thank you!!!!!!</pre>
+    </div>
 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-jsx.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-php.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
 </body>
 </html>
